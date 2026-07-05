@@ -122,7 +122,7 @@ The final model supports real-time polyp tracking across video frames using Byte
 
 ## 🌐 Interactive Web Application
 
-**Live Demo:** [Streamlit Cloud](https://YOUR_APP_URL_HERE)
+**Live Demo:** [Streamlit Cloud](https://polyp-detection-safety-first-q5eqnpanupvtr8j5dhckvf.streamlit.app/)
 
 ### Screenshots
 
@@ -234,7 +234,7 @@ polyp-detection-safety-first/
 
 ## 🔗 Links
 
-- **Live Demo:** [Streamlit Cloud](https://YOUR_APP_URL_HERE)
+- **Live Demo:** [Streamlit Cloud](https://polyp-detection-safety-first-q5eqnpanupvtr8j5dhckvf.streamlit.app/)
 - **Source Code:** [GitHub](https://github.com/foroughm423/polyp-detection-safety-first)
 - **Training Notebooks (with outputs):**
   - [01 — Data Exploration](https://www.kaggle.com/foroughgh95/LINK_01)
