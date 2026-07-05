@@ -1,0 +1,17 @@
+{
+  "model": "YOLOv8m-seg (same weights as baseline)",
+  "config": "safety-first (threshold=0.30, no retraining)",
+  "selected_threshold": 0.3,
+  "kvasir_test": {
+    "threshold": 0.3,
+    "precision": 0.8639155367729568,
+    "recall": 0.8670886075949367,
+    "map50": 0.8609504399952319
+  },
+  "cvc_cross_dataset": {
+    "threshold": 0.3,
+    "precision": 0.8868717401716658,
+    "recall": 0.7524002989644966,
+    "map50": 0.7459695027174201
+  }
+}

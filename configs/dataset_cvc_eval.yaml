@@ -1,0 +1,6 @@
+path: D:/Deep_Projects/polyp-detection-safety-first/repo/data/yolo_format
+train: train/images
+val: cvc_test/images
+nc: 1
+names:
+- polyp

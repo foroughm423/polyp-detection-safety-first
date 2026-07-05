@@ -1,0 +1,18 @@
+{
+  "model": "YOLOv8m-seg",
+  "config": "baseline (default settings)",
+  "kvasir_test": {
+    "map50_box": 0.9113531622902274,
+    "map50_mask": 0.9042590177780788,
+    "precision": 0.8639155367729568,
+    "recall": 0.8670886075949367
+  },
+  "cvc_cross_dataset": {
+    "map50_box": 0.8588859360608971,
+    "map50_mask": 0.8797328889355118,
+    "precision": 0.8868717401716658,
+    "recall": 0.7524002989644966
+  },
+  "inference_speed_ms": 22.451696395874023,
+  "inference_fps": 44.540064250279606
+}

@@ -1,0 +1,33 @@
+# Model weights - never commit large model files
+models/
+*.pt
+*.pth
+
+# Raw and processed data - too large for GitHub
+data/raw/
+data/negatives_raw/
+data/kvasir-seg/
+data/cvc-clinicdb/
+data/yolo_format/
+
+# Ultralytics training outputs
+runs/
+notebooks/runs/
+
+# Environment variables - contains secret tokens
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini

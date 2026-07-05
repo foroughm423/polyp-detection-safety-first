@@ -1,0 +1,15 @@
+{
+  "model": "YOLOv8m-seg",
+  "config": "aug+neg (flipud=0.5, degrees=45, blur=0.3, negatives=20%)",
+  "kvasir_test": {
+    "recall": 0.8976171083672027,
+    "precision": 0.8986203358039301,
+    "map50": 0.8827477707613067
+  },
+  "cvc_cross_dataset": {
+    "recall": 0.8142414860681114,
+    "precision": 0.8637110016420362,
+    "map50": 0.7924163594220857
+  },
+  "miss_rate": 0.10681114551083591
+}

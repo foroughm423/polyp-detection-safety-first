@@ -1,0 +1,28 @@
+{
+  "final_model": {
+    "weights": "models/aug_neg/weights/best.pt",
+    "config": "YOLOv8m-seg, imgsz=640, conf=0.30",
+    "training": "aug+neg (flipud=0.5, degrees=45, 140 negative frames)"
+  },
+  "results": {
+    "kvasir_test": {
+      "recall": 0.8976171083672027,
+      "precision": 0.8986203358039301,
+      "map50": 0.8827477707613067
+    },
+    "cvc_cross_dataset": {
+      "recall": 0.8142414860681114,
+      "precision": 0.8637110016420362,
+      "map50": 0.7924163594220857
+    }
+  },
+  "baseline_comparison": {
+    "cvc_recall_baseline": 0.7524002989644966,
+    "cvc_recall_final": 0.8142414860681114,
+    "improvement": 0.06184118710361486
+  },
+  "inference_speed": {
+    "ms_per_image": 22.451696395874023,
+    "fps": 44.540064250279606
+  }
+}
