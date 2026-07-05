@@ -39,7 +39,7 @@ MODEL_PATH = hf_hub_download(
 
 CONF_DEFAULT = 0.30
 RESULTS_PATH = "results/metrics/final_summary.json"
-FIGURES_PATH = "results/figures"
+FIGURES_PATH = os.path.join(os.path.dirname(__file__), "..", "results", "figures")
 
 
 
