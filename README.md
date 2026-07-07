@@ -237,11 +237,11 @@ polyp-detection-safety-first/
 - **Live Demo:** [Streamlit Cloud](https://polyp-detection-safety-first-q5eqnpanupvtr8j5dhckvf.streamlit.app/)
 - **Source Code:** [GitHub](https://github.com/foroughm423/polyp-detection-safety-first)
 - **Training Notebooks (with outputs):**
-  - [01 — Data Exploration](https://www.kaggle.com/foroughgh95/LINK_01)
-  - [03 — Baseline Training](https://www.kaggle.com/foroughgh95/LINK_03)
-  - [04 — Safety-First Training](https://www.kaggle.com/foroughgh95/LINK_04)
-  - [04b — Error Analysis](https://www.kaggle.com/foroughgh95/LINK_04b)
-  - [05 — Final Evaluation](https://www.kaggle.com/foroughgh95/LINK_05)
+  - [01 — Data Exploration](https://www.kaggle.com/code/foroughgh95/polyp-detection-01-data-exploration)
+  - [03 — Baseline Training](https://www.kaggle.com/code/foroughgh95/polyp-detection-03-baseline-training)
+  - [04 — Safety-First Training](https://www.kaggle.com/code/foroughgh95/polyp-detection-04-safety-first)
+  - [04b — Error Analysis](https://www.kaggle.com/code/foroughgh95/polyp-detection-04b-error-analysis)
+  - [05 — Final Evaluation](https://www.kaggle.com/code/foroughgh95/polyp-detection-05-final-evaluation)
 
 ---
 
