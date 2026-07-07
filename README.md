@@ -64,8 +64,8 @@ This project tackles polyp detection in colonoscopy images using YOLOv8m-seg wit
 
 | Approach | Kvasir Recall | CVC Recall | Notes |
 |----------|--------------|------------|-------|
-| Baseline (conf=0.50) | 0.867 | 0.752 | Standard YOLOv8m-seg |
-| Threshold Tuning (conf=0.30) | 0.867 | 0.752 | Same model, lower threshold |
+| Baseline (conf=0.50) | 0.867 | 0.711 | Standard YOLOv8m-seg (Default threshold) |
+| Threshold Tuning (conf=0.30) | 0.867 | 0.752 | Same model, optimized threshold |
 | Higher Resolution (imgsz=960) | 0.835 | 0.751 | Retrain at 960px — did not improve |
 | **Aug + Negatives (final)** | **0.898** | **0.814** | Stronger augmentation + 140 negative frames |
 
