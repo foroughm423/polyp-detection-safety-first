@@ -12,13 +12,13 @@ This project tackles polyp detection in colonoscopy images using YOLOv8m-seg wit
 
 ### Key Results
 
-| Metric | Baseline | Final Model | Change |
+| Metric | Optimal-Threshold Baseline (conf=0.30) | Final Model | Change |
 |--------|----------|-------------|--------|
 | **Kvasir-SEG Recall** | 86.7% | **89.8%** | +3.1% |
 | **CVC-ClinicDB Recall** | 75.2% | **81.4%** | +6.2% |
 | **Inference Speed** | 45 FPS | 45 FPS | — |
 
-> **Cross-dataset generalization:** The final model achieves 81.4% recall on CVC-ClinicDB, a dataset never seen during training (+6.2% over baseline).
+> **Cross-dataset generalization:** The final model achieves 81.4% recall on CVC-ClinicDB, a dataset never seen during training (+6.2% over baseline). "Baseline" here refers to the F1-optimal operating point (conf=0.30). At the true default threshold (conf=0.50), CVC-ClinicDB recall is 71.1% — see the Model Comparison table below for the full breakdown.
 
 ---
 
@@ -54,7 +54,7 @@ This project tackles polyp detection in colonoscopy images using YOLOv8m-seg wit
 
 ### Confidence Threshold
 - **Operational threshold:** 0.30 (selected via sweep in notebook 04)
-- Default YOLO threshold (0.50) leaves recall at plateau — lowering to 0.30 recovers missed detections without meaningful precision loss on in-distribution data.
+- At the true default threshold (conf=0.50), CVC-ClinicDB recall was only 71.1%. Lowering to 0.30 recovered missed detections, raising recall to 75.2% — with no further gain below 0.30 (recall plateaus), and without meaningful precision loss on in-distribution data.
 
 ---
 
@@ -103,7 +103,7 @@ Following YOLO-LAN (2025), which reported +15.2% mAP50:95 on the same dataset us
 - Added `flipud=0.5`, `degrees=45`, `hsv_s=0.9` to augmentation
 - Added 140 polyp-free frames from Kvasir (normal categories) to training split
 
-**Result: CVC recall improved from 75.2% to 81.4% (+6.2 percentage points)**
+**Result: CVC recall improved from 75.2% (optimal-threshold baseline) to 81.4% (+6.2 percentage points)**
 
 ---
 
